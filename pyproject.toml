@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetrytest"
+version = "0.1.0"
+description = ""
+authors = ["Bozena <bozena.kirkov@o2.pl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+arrow = "^1.2.3"
+pytest = "^7.2.1"
+tensorflow = "^2.11.0"
+nox = "^2022.11.21"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
