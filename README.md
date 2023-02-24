@@ -1,2 +1,3 @@
 # ml_deploy
-testing poetry, nox, flask, tensorflow
+
+It is repository for testing poetry, nox, flask, tensorflow.
