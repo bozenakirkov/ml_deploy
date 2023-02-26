@@ -37,4 +37,5 @@ def infer():
 
 if __name__ == '__main__':
     app.run()
+    # add /apidocs/ to url
 

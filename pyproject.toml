@@ -7,7 +7,6 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
-arrow = "^1.2.3"
 pytest = "^7.2.1"
 tensorflow = "^2.11.0"
 nox = "^2022.11.21"

@@ -1,0 +1,5 @@
+flasgger==0.9.5
+flask==2.2.2
+nox==2022.11.21
+numpy==1.23.5
+tensorflow==2.11.0
