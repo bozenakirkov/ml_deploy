@@ -15,7 +15,7 @@ class Inferrer:
         }
         self.saved_path = os.path.abspath(os.path.join(os.path.dirname(__file__),
                                                        "../model_2"))
-        self.model_version = os.path.basename(self.saved_path)
+        self.model_version = "model_1" # default
         self.model = tf.saved_model.load(self.saved_path)
         self.predict = self.model.signatures["serving_default"]
 
@@ -25,6 +25,9 @@ class Inferrer:
             raise FileNotFoundError
         image = np.load(image_npz)
         return tf.expand_dims(image["inputs"], axis=0), image["targets"]
+
+    def select_model(self, model):
+        self.model_version = model if model else self.model_version
 
     def infer(self, img_path_npz: str) -> str:
         image, target = self.preprocess(img_path_npz)
