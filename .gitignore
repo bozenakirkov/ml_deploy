@@ -1,2 +1,7 @@
 # ignore 'tmp' directory
-./tmp
+tmp
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+poetrytest/__pycache__/
+tests/__pycache__/

@@ -1,7 +1,10 @@
-from flask import Flask, request
-from poetrytest.inferrer import Inferrer
-from flasgger import Swagger
 import os
+
+from flask import Flask, request
+from flasgger import Swagger
+
+from inferrer import Inferrer
+
 
 app = Flask(__name__)
 swagger = Swagger(app)
@@ -15,7 +18,7 @@ inferrer = Inferrer()
 
 
 @app.route("/infer", methods=["POST"])
-def infer():
+def infer() -> str:
     """Predict digits
         ---
         parameters:
