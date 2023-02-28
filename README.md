@@ -15,10 +15,14 @@ Scripts for generating models and test samples are jupyter notebooks:
 
 
 **Prerequisites:**
+
 Move files to ml_deploy parent directory:
+
 - Dockerfile
 - deployment.yaml
+
 Install Docker Desktop
+
 In Docker Desktop -> Settings -> Kubernetes -> check "Enable Kubernetes"
 
 
