@@ -12,11 +12,19 @@ Scripts for generating models and test samples are jupyter notebooks:
 - model_1.ipynb
 - model_2.ipynb
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 **Prerequisites:**
 
 Install Docker Desktop
 
+<<<<<<< Updated upstream
 In Docker Desktop - Settings - Kubernetes - check "Enable Kubernetes"
+=======
+In Docker Desktop -> Settings -> Kubernetes -> check "Enable Kubernetes"
+>>>>>>> Stashed changes
 
 Move files to ml_deploy parent directory:
 

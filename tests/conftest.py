@@ -1,5 +1,5 @@
 import pytest
-from poetrytest.app import app as my_app
+from app import app as my_app
 
 
 @pytest.fixture
