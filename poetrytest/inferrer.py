@@ -13,9 +13,10 @@ class Inferrer:
             "model_2":
                 {"in": "flatten_input", "out": "last_layer"}
         }
+        self.model_version = "model_1"  # default
         self.saved_path = os.path.abspath(os.path.join(os.path.dirname(__file__),
-                                                       "../model_2"))
-        self.model_version = "model_1" # default
+                                                       "../" + self.model_version))
+
         self.model = tf.saved_model.load(self.saved_path)
         self.predict = self.model.signatures["serving_default"]
 

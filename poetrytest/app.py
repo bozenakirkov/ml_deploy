@@ -3,7 +3,7 @@ import os
 from flask import Flask, request
 from flasgger import Swagger
 
-from inferrer import Inferrer
+from poetrytest.inferrer import Inferrer
 
 
 app = Flask(__name__)

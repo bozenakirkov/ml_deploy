@@ -3,11 +3,7 @@ import nox
 
 @nox.session
 def tests(session):
-    session.install("pytest", "tensorflow", "numpy")
-    session.notify("coverage")
+    session.install("coverage", "pytest", "tensorflow", "numpy", "flask", "flasgger")
+    session.run("coverage", "run", "-m", "pytest")
+    session.run("coverage", "report", "-m")
 
-
-@nox.session
-def coverage(session):
-    session.install("coverage")
-    session.run("coverage")
