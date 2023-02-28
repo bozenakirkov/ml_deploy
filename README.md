@@ -13,7 +13,8 @@ Scripts for generating models and test samples are jupyter notebooks:
 - model_2.ipynb
 
 
-Prerequisites:
+
+**Prerequisites:**
 Move files to ml_deploy parent directory:
 - Dockerfile
 - deployment.yaml
@@ -21,27 +22,29 @@ Install Docker Desktop
 In Docker Desktop -> Settings -> Kubernetes -> check "Enable Kubernetes"
 
 
-User Guide:
 
-Start Docker Desktop.exe
+**User Guide:**
 
-In Anaconda Prompt (anaconda3) in ml_deploy directory run:
+- start Docker Desktop.exe
+
+- In Anaconda Prompt (anaconda3) in ml_deploy directory run:
 nox --verbose
 
-open cmd as admin
-go to ml_deploy parent directory and run:
+- open cmd as admin
+
+- go to ml_deploy parent directory and run:
 docker build -t model-deploy .
 
-verify the image was created:
+- verify the image was created:
 docker image ls
 
-run the application in a container and map it to port 5000:
+- run the application in a container and map it to port 5000:
 docker run -p 5000:5000 model-deploy
 
-send the YAML file to Kubernetes:
+- send the YAML file to Kubernetes:
 kubectl apply -f deployment.yaml
 
-see the pods are running:
+- see the pods are running:
 kubectl get pods
 
 
