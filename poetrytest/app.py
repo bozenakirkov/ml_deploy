@@ -40,7 +40,7 @@ def infer() -> str:
             description: Predictions for [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] digits.
         """
     model = request.values["model"]
-    inferrer.select_model(model)
+    inferrer.change_model(model)
     input_file = request.files.get("input_file")
     input_file_path = os.path.join(app.config['uploadFolder'],
                                    input_file.filename)
