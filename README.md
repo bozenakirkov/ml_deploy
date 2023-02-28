@@ -2,7 +2,7 @@
 
 It is a repository for deploying ML models and testing poetry, nox, tensorflow, flask, and swagger.
 
-Model is trained using MNIST dataset and recognizes digits [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].
+Model is trained using MNIST dataset and recognizes digits **[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]**.
 
 There are two different models:
 - model_1
@@ -12,37 +12,30 @@ Scripts for generating models and test samples are jupyter notebooks:
 - model_1.ipynb
 - model_2.ipynb
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-**Prerequisites:**
+## **Prerequisites:**
 
 Install Docker Desktop
 
-<<<<<<< Updated upstream
 In Docker Desktop - Settings - Kubernetes - check "Enable Kubernetes"
-=======
-In Docker Desktop -> Settings -> Kubernetes -> check "Enable Kubernetes"
->>>>>>> Stashed changes
 
-Move files to ml_deploy parent directory:
+Move files to **ml_deploy** parent directory:
 
 - Dockerfile
 - deployment.yaml
 
-Test the code - in Anaconda Prompt (anaconda3) in ml_deploy directory run:
+Test the code - in Anaconda Prompt (anaconda3) in **ml_deploy** directory run:
 
 nox --verbose
 
 
-**User Guide:**
+## **User Guide:**
 
 - start Docker Desktop.exe
 
 - open cmd as admin
 
-- go to ml_deploy parent directory and run:
+- go to **ml_deploy** parent directory and run:
 
 docker build -t model-deploy .
 
