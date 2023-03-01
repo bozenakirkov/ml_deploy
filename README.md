@@ -55,3 +55,11 @@ kubectl apply -f deployment.yaml
 
 kubectl get pods
 
+- tag docker image
+
+docker image tag model-deploy USER_NAME/model-deploy:latest
+
+- push image to docker hub
+
+docker image push USER_NAME/model-deploy:latest
+
