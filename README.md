@@ -15,22 +15,6 @@ Scripts for generating models and test samples are jupyter notebooks:
 
 ## **Prerequisites:**
 
-Install Docker Desktop
-
-In Docker Desktop - Settings - Kubernetes - check "Enable Kubernetes"
-
-Move files to **ml_deploy** parent directory:
-
-- Dockerfile
-- deployment.yaml
-
-Test the code - in **ml_deploy** directory run:
-
-nox --verbose
-
-
-## **User Guide:**
-
 - install python from https://www.python.org/downloads/release/python-3109/
 
 - from https://github.com/python-poetry/install.python-poetry.org download install-poetry.py and run it
@@ -43,6 +27,22 @@ ERROR:
 Installing collected packages: tensorflow-intel
 
 ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '<path_to_appdata>\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\poetrytest-_gsdGUBJ-py3.10\\Lib\\site-packages\\tensorflow\\include\\tensorflow\\compiler\\xla\\mlir_hlo\\_virtual_includes\\compose_set_interface_inc_gen\\mlir-hlo\\Dialect\\gml_st\\transforms\\compose_set_interface.h.inc'
+
+- Install Docker Desktop
+
+- In Docker Desktop - Settings - Kubernetes - check "Enable Kubernetes"
+
+- Move files listed below to **ml_deploy** parent directory:
+
+  - Dockerfile
+  - deployment.yaml
+
+- Test the code - in **ml_deploy** directory run:
+
+nox --verbose
+
+
+## **User Guide:**
 
 - start Docker Desktop.exe
 
@@ -68,11 +68,11 @@ kubectl apply -f deployment.yaml
 
 kubectl get pods
 
-- tag docker image
+- tag docker image:
 
 docker image tag model-deploy USER_NAME/model-deploy:latest
 
-- push image to docker hub
+- push image to docker hub:
 
 docker image push USER_NAME/model-deploy:latest
 
