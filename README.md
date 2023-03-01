@@ -31,6 +31,19 @@ nox --verbose
 
 ## **User Guide:**
 
+- install python from https://www.python.org/downloads/release/python-3109/
+
+- from https://github.com/python-poetry/install.python-poetry.org download install-poetry.py and run it
+
+- install dependencies from pyproject.toml file
+(could not install tensorflow https://github.com/tensorflow/tensorflow/issues/48939)
+
+ERROR:
+
+Installing collected packages: tensorflow-intel
+
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '<path_to_appdata>\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\poetrytest-_gsdGUBJ-py3.10\\Lib\\site-packages\\tensorflow\\include\\tensorflow\\compiler\\xla\\mlir_hlo\\_virtual_includes\\compose_set_interface_inc_gen\\mlir-hlo\\Dialect\\gml_st\\transforms\\compose_set_interface.h.inc'
+
 - start Docker Desktop.exe
 
 - open cmd as admin
