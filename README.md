@@ -24,7 +24,7 @@ Move files to **ml_deploy** parent directory:
 - Dockerfile
 - deployment.yaml
 
-Test the code - in Anaconda Prompt (anaconda3) in **ml_deploy** directory run:
+Test the code - in **ml_deploy** directory run:
 
 nox --verbose
 
