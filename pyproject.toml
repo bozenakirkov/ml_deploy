@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetrytest"
-version = "0.1.0"
+version = "1.4.0"
 description = ""
 authors = ["Bozena <bozena.kirkov@o2.pl>"]
 readme = "README.md"
@@ -8,9 +8,11 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
 pytest = "^7.2.1"
-tensorflow = "^2.11.0"
 nox = "^2022.11.21"
-
+flasgger = "^0.9.5"
+flask = "^2.2.2"
+tensorflow = "^2.11.0"
+numpy = "^1.24.2"
 
 [build-system]
 requires = ["poetry-core"]
